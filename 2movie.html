@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tarak Movies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff3c00;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      gap: 20px;
+    }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #ff3c00;
+      color: #121212;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .movies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+    }
+    .movie-card {
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px #ff3c00;
+      transition: transform 0.3s;
+    }
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+    .movie-poster {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      display: block;
+    }
+    .movie-info {
+      padding: 12px 15px;
+    }
+    .movie-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ff6600;
+      margin: 0 0 8px 0;
+    }
+    .movie-desc {
+      font-size: 14px;
+      color: #bbb;
+      line-height: 1.3;
+      height: 56px; /* limit description height */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      text-align: center;
+      background-color: #1f1f1f;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Tarak Movies
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Action</a>
+    <a href="#">Drama</a>
+    <a href="#">Comedy</a>
+    <a href="#">Romance</a>
+    <a href="#">Thriller</a>
+  </nav>
+
+  <div class="container">
+    <div class="movies-grid">
+
+      <div class="movie-card">
+        <img class="movie-poster" src="https://m.media-amazon.com/images/I/51s+eOxzp9L._AC_.jpg" alt="Inception" />
+        <div class="movie-info">
+          <h3 class="movie-title">Inception</h3>
+          <p class="movie-desc">A thief who steals corporate secrets through dream-sharing technology.</p>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <img class="movie-poster" src="https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg" alt="The Matrix" />
+        <div class="movie-info">
+          <h3 class="movie-title">The Matrix</h3>
+          <p class="movie-desc">A hacker discovers reality is a simulation and fights to free humanity.</p>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <img class="movie-poster" src="https://m.media-amazon.com/images/I/71nQpQKfZkL._AC_SY679_.jpg" alt="Interstellar" />
+        <div class="movie-info">
+          <h3 class="movie-title">Interstellar</h3>
+          <p class="movie-desc">Explorers travel through a wormhole in space to save humanity.</p>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <img class="movie-poster" src="https://m.media-amazon.com/images/I/81b+X8aY2zL._AC_SY679_.jpg" alt="Avengers: Endgame" />
+        <div class="movie-info">
+          <h3 class="movie-title">Avengers: Endgame</h3>
+          <p class="movie-desc">Superheroes team up to undo the damage caused by Thanos.</p>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <img class="movie-poster" src="https://m.media-amazon.com/images/I/61ZPvOiT+xL._AC_SY679_.jpg" alt="Joker" />
+        <div class="movie-info">
+          <h3 class="movie-title">Joker</h3>
+          <p class="movie-desc">A mentally troubled comedian descends into madness.</p>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <img class="movie-poster" src="https://m.media-amazon.com/images/I/81v+NQ7Q2XL._AC_SY679_.jpg" alt="Frozen II" />
+        <div class="movie-info">
+          <h3 class="movie-title">Frozen II</h3>
+          <p class="movie-desc">Elsa and Anna embark on a journey to discover the origin of Elsa's powers.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Tarak Movies. All rights reserved.
+  </footer>
+
+</body>
+</html>
